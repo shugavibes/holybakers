@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holy Bakers</title>
+        <link rel="icon" type="image/png" href="img/favicon_bread.png"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+
+<!-- Este es el header de navegacion de la web -->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="index.html"><img src="img/logo.png" alt="holy bakers logo que incluye una ilustracion de dos panes y el nombre de la marca"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Clases
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="clases.html">Clases en vivo</a>
+                          <a class="dropdown-item" href="masterclass.html">Masterclass</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Visitanos</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Aqui arranca  el hero con la imagen y texto principal -->
+        <section class="heroMedia">
+            <img class="media" src="img/about.jpg" alt="dos mujeres en el mostrador de una panaderia con medialunas y detras una gondola llena de variedades de panes">
+            <div class="heroContent">
+                <h1 class="mainTitle">Calidad y dedicación</h1>
+                <p class="generalText">Para nosotros, el buen pan es todo.</p>
+            </div>
+        </section>
+
+
+        <!-- Aqui continua la seccion de about -->
+        <section id="about">
+                <h2 class="secondaryTitle">Nosotros</h2>
+                <p class="generalText">Somos un grupo de jovenes apasionados por lo que hacen, dedidacos a la cocina como estilo de vida.</p>
+                <p class="generalText">Creamos nuestra primera bakery 100% organica y natural en 2010, y durante estos años ya pudimos abrir mas de 10 locales en Capital Federal, Córdoba y Rosario.</p>
+                <p class="generalText">Desde 2019, arrancamos con nuestros cursos por los que ya pasaron mas de 1500 personas, que llevaron nuestra pasión por el pan a muchos hogares por el país.</p>
+        </section>
+
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+  </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+        <!-- Aqui arranca el footer -->
+        <footer id="footer">
+            <nav class="footerMenu">
+                <ul>
+                    <li><a href="clases.html">Clases en vivo</a></li>
+                    <li><a href="masterclass.html">Masterclass</a></li>
+                    <li><a href="bakery.html">Bakery</a></li>
+                    <li><a href="about.html">¿Quiénes somos?</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footerInfo">
+                <img src="img/logo_inverted.png" alt="holy bakers logo que incluye una ilustracion de dos panes y el nombre de la marca">
+                <a href="#">Copyright 2021 etc Holy Bakers</a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holy Bakers</title>
+        <link rel="icon" type="image/png" href="img/favicon_bread.png"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- Este es el header de navegacion de la web -->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="index.html"><img src="img/logo.png" alt="holy bakers logo que incluye una ilustracion de dos panes y el nombre de la marca"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Clases
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="clases.html">Clases en vivo</a>
+                            <a class="dropdown-item" href="masterclass.html">Masterclass</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Visitanos</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Aqui arranca  el hero con la imagen y texto principal -->
+        <section class="heroMedia">
+            <img class="media" src="img/hero_clase.jpg" alt="joven mujer amasando pan sobre una mesa en una cocina">
+            <div class="heroContent">
+                <h1 class="mainTitle">El pan perfecto en tus manos</h1>
+                <p class="generalText">Ganá una nueva habilidad para toda la vida con nuestras clases.</p>
+            </div>
+        </section>
+
+        <!-- Aqui arranca  la información para inscribirse en cada grupo -->
+        <section id="groups" class="container-fluid">
+            <h2 class="secondaryTitle">Grupos disponibles</h2>
+            <p class="generalText">Todos los meses abrimos grupos presenciales y online en diferentes turnos y horarios que se van publicando acá y en nuestras redes. Estos son los próximos a comenzar:</p>
+            
+            <section class="groupHorarios">
+            <div class="groupDetails card col-xl-3 col-md-4 col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title">20 JUL - 13 AGO</h5>
+                    <p class="card-text">Modalidad Virtual - Turno tarde<br>Miércoles de 18 a 20hs</p>
+                    <a href="#" class="buttonAlternative">Inscribirse</a>
+                </div>
+            </div>
+                        
+            <div class="groupDetails card col-xl-3 col-md-4 col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title">20 JUL - 13 AGO</h5>
+                    <p class="card-text">Modalidad Virtual - Turno tarde<br>Miércoles de 18 a 20hs</p>
+                    <a href="#" class="buttonAlternative">Inscribirse</a>
+                </div>
+            </div>
+            
+            <div class="groupDetails card col-xl-3 col-md-4 col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title">20 JUL - 13 AGO</h5>
+                    <p class="card-text">Modalidad Virtual - Turno tarde<br>Miércoles de 18 a 20hs</p>
+                    <a href="#" class="buttonAlternative">Inscribirse</a>
+                </div>
+            </div>
+            
+            <div class="groupDetails card col-xl-3 col-md-4 col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title">20 JUL - 13 AGO</h5>
+                    <p class="card-text">Modalidad Virtual - Turno tarde<br>Miércoles de 18 a 20hs</p>
+                    <a href="#" class="buttonAlternative">Inscribirse</a>
+                </div>
+            </div>
+            
+            <div class="groupDetails card col-xl-3 col-md-4 col-sm-2">
+                <div class="card-body">
+                    <h5 class="card-title">20 JUL - 13 AGO</h5>
+                    <p class="card-text">Modalidad Virtual - Turno tarde<br>Miércoles de 18 a 20hs</p>
+                    <a href="#" class="buttonAlternative">Inscribirse</a>
+                </div>
+            </div>
+        </section>    
+        </section>
+
+
+        <!-- Aqui arranca la seccion de todo el contenido de esta pagina -->
+        <section id="formSection" class="col-xl-12 col-md-12 col-sm-6">
+            <h3 class="thirdTitle">¿No encuentras un grupo que te sea cómodo?</h3>
+            <p class="generalText">Dejanos tus datos para que te contactemos cuando vayamos abriendo los próximos.</p>
+            <form id="forms" method="GET" enctype="text/plain">
+                <div class="mb-3 col-xl-3 col-md-6 col-sm-6">
+                    <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 col-xl-3 col-md-6 col-sm-6">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="sel1">¿Qué modalidad preferis para cursar?</label>
+                    <div class="col-xl-2 col-md-3 col-sm-6">
+                        <select class="form-control" id="sel1">
+                        <option>Presencial</option>
+                        <option>Virtual</option>
+                        <option>Mixta</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="radio">
+                    <label for="modalidad">¿En que horario preferís cursar?</label>                    
+                    <div class="radioFields">
+                        <label><input type="radio" name="optradio" checked>Mañana: 09 a 11</label>
+                    </div>
+                    <div class="radioFields">
+                        <label><input type="radio" name="optradio">Tarde: 19 a 21</label>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> Quiero recibir información sobre nuevos productos de Holy Bakers                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>   
+
+        <!-- Aqui arranca el footer -->
+        <footer id="footer">
+            <nav class="footerMenu">
+                <ul>
+                    <li><a href="clases.html">Clases en vivo</a></li>
+                    <li><a href="masterclass.html">Masterclass</a></li>
+                    <li><a href="bakery.html">Bakery</a></li>
+                    <li><a href="about.html">¿Quiénes somos?</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footerInfo">
+                <img src="img/logo_inverted.png" alt="holy bakers logo que incluye una ilustracion de dos panes y el nombre de la marca">
+                <a href="#">Copyright 2021 etc Holy Bakers</a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

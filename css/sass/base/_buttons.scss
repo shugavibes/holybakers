@@ -1,0 +1,39 @@
+@import "colors";
+@import "fonts";
+
+
+.button {
+    color: $greycoral;
+    background-color: $orange;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 32px;
+    font-family: $second-font;
+    text-align: center;
+}
+.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
+
+.buttonAlternative {
+    color: $greenwater;
+    border-color: $greenwater;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 32px;
+    font-family: $second-font;
+    text-align: center;
+    transition: color background-color 0.5s;
+    transition: color 0.5s;
+}
+.buttonAlternative:hover {
+    color: white;
+    background-color: $greenwater;
+    border-color: $greenwater;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+}

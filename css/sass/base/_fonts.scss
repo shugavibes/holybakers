@@ -1,0 +1,31 @@
+@import "colors";
+
+/* ---------- ACA COMIENZAN LAS VARIABLES DE TEXTOS ---------- */
+
+$main-font: 'Fraunces', serif;
+$second-font: Arial, Helvetica, sans-serif;
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DE TEXTOS ---------- */
+.mainTitle {
+    color: $plainwhite;
+    font-family: $main-font;
+}
+
+
+.secondaryTitle {
+    color: $greycoral;
+    font-family:$main-font;
+}
+
+
+.thirdTitle {
+    color: $orange-strong;
+    font-family: $second-font;
+}
+
+
+.generalText {
+    color: $greycoral;
+    font-family: $second-font;
+}

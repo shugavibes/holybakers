@@ -1,0 +1,512 @@
+@import "base/fonts";
+@import "base/buttons";
+@import "base/colors";
+$spacing: 8px;
+
+html{
+    font-size: 16px;
+}
+
+/* ---------- ACA COMIENZAN LOS ID DEL HEADER ---------- */
+#header {
+    color: $greycoral;
+    background-color: $plainwhite;
+    font-family: $second-font;
+    font-size: 0.875rem;
+    padding: 16px 24px 16px 24px;
+    border-bottom: 1px solid $orange;
+    .navbar-light .navbar-nav .nav-link {
+        color: $greycoral;
+        padding: 0px 16px 0px 16px;
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: $orange-strong;
+    }
+    .bg-light {
+        background-color: $plainwhite!important;
+    }
+    .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    }
+}
+
+/* ---------- ACA COMIENZAN LAS CLASES DEL FOOTER ---------- */
+#footer {
+    background-color: $greycoral;
+    color: $plainwhite;
+    font-family: 'Fraunces', serif;
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: $spacing*3;
+    padding-top: $spacing*5;
+    padding-bottom: $spacing*5;
+
+    .footerMenu {
+        list-style: none;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        grid-column-gap: $spacing*3;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            list-style: none;
+            li {
+                padding-left: $spacing*2;
+                padding-right: $spacing*2;
+                a {
+                color: $plainwhite;
+                text-decoration: none;
+                transition: color 0.5s;
+                }
+                a:hover {
+                color: $orange-strong;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footerInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        a {
+            color: $greylight;
+            text-decoration: none;
+            padding-top: $spacing*2;
+            transition: color 0.5s;
+            img {
+                width: 135px;
+                
+            }
+        }
+    }
+}
+
+
+/* ---------- ACA COMIENZAN LOS ID DE MASTERCLASS ---------- */
+
+#masterclass {
+    display: grid;
+    grid-template-rows: 1fr;
+    .masterclassContent {
+        padding: $spacing*3;
+        iframe {
+            width: 100%;
+            height: 550px;
+            padding-top: $spacing*3;
+        }
+    }
+}
+
+
+/* ---------- ACA COMIENZAN LOS ID Y CLASS DEL FORM ---------- */
+#forms {
+    font-family: $second-font;
+}
+
+#formSection {
+    padding: $spacing*3;
+    .radio {
+        padding-top: $spacing*2;
+        padding-bottom: $spacing*2;
+        .radioFields {
+            padding-top: $spacing;
+            padding-bottom: $spacing;
+        }
+    }
+}
+
+ /* ---------- ACA COMIENZAN LAS CLASES DEL HERO ---------- */
+.heroMedia {
+    position: relative;
+    background-color: $orange;
+    .media {
+        position:relative;
+        z-index:0;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+
+.heroContent {
+    position:absolute;
+    top: 40%;
+    left: $spacing*5;
+    z-index:1;
+    .mainTitle {
+        font-family:$main-font;
+        font-size: 4.375rem;
+        font-weight:900;
+        text-shadow: -1px 1px 3px #666;
+    } 
+    .generalText {
+        font-family: $main-font;
+        font-size: 1.5rem;
+        color: $plainwhite;
+        text-shadow: -1px 1px 3px #666;
+    }
+}
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DE PODUCTO ---------- */
+#product {
+    background: $gradient-home;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: $spacing*7;
+    padding-top: $spacing*5;
+    padding-bottom: $spacing*5;
+    justify-content: center;
+}
+
+.imageRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $spacing*3;
+    justify-items: left;
+    div {
+        max-width: 500px;
+        order: 1;
+    }
+    img {
+        border-radius: $spacing*2;
+        order: 2;
+        width:100%;
+    }
+}
+.imageLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $spacing*3;
+    justify-items: left;
+    div {
+        max-width: 500px;
+    }
+    img {
+        border-radius: $spacing*2;
+        width:100%;
+    }
+}
+
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DE GRUPOS ---------- */
+#groups {
+    background-color: $plainwhite;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: $spacing*3;
+
+    .card-title {
+        color: $orange-strong;
+        font-weight: bold;
+        .card-text {
+            color: $greycoral;
+        }
+    }
+    div {
+        transition: transform 0.5s;
+    }
+    div:hover{
+        transform:scale(1.02);
+        background: $gradient-cards;
+        border: 0px;
+        border-radius: $spacing;
+    }
+    div:hover .card-title {
+        color: $greycoral;
+    }
+    div:hover .buttonAlternative {
+        color: $plainwhite;
+        background-color: $greenwater;
+    }
+
+}
+.groupHorarios {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    justify-content: flex-start;
+    grid-column-gap: $spacing*3;
+    grid-row-gap: $spacing*3;
+}
+.groupDetails {
+    padding: $spacing*2;
+    border: 1px solid $greenwater;
+    border-radius: $spacing;
+    width: 100%;
+}
+
+
+ /* ---------- ACA COMIENZAN LAS CLASES DEL BANNER ---------- */
+.bannerMedia {
+    position: relative;
+
+    .media {
+        position:relative;
+        z-index:0;
+        max-width: 100%;
+        height: auto;
+        width:100%;
+    }
+    .mediaMobile {
+        display: none;
+        width: 100%;
+    }
+    .secondaryTitle {
+        padding-bottom: $spacing*3;
+    }
+}
+
+.bannerContent {
+    position:absolute;
+    top: 40%;
+    left: 40px;;
+    z-index:1;
+}
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DEL BANNER FINAL ---------- */
+.bannerEnd {
+    background-color: $plainwhite;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+
+    .bannerEndContent {
+        display: grid;
+        padding: 16px 40px 40px 40px;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        text-align: center;
+        .generalText {
+            padding-bottom: $spacing*3;
+        }
+    }
+}
+
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DE LA SECCION ABOUT ---------- */
+#about {
+    padding: $spacing*3;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/* ---------- ACA COMIENZAN LAS CLASES DE LA SECCION CONTACT ---------- */
+#contact {
+    padding: $spacing*3;
+}
+
+
+/* ---------- AJUSTES PARA TALBET ---------- */
+/* ---------- AJUSTES PARA TALBET ---------- */
+/* ---------- AJUSTES PARA TALBET ---------- */
+
+@media only screen and (max-width:768px)
+{
+
+    /* ---------- HERO ---------- */
+    .heroContent {
+        top: 30%;
+        .mainTitle {
+            font-size: 3.125rem;
+        } 
+    }
+    
+
+
+/* ---------- PDORUCT ---------- */
+#product {
+            padding-right: $spacing*2;
+            padding-left: $spacing*2;
+            .imageLeft img {
+                max-width: 348px;
+            }
+            .imageRight img {
+                max-width: 348px;
+            }
+    }
+
+
+/* ---------- BANNER ---------- */
+.bannerMedia {
+    position: relative;
+}
+    
+.bannerContent {
+        top: 30%;
+        left: $spacing*3;
+        .secondaryTitle {
+            padding-bottom: $spacing*2;
+        }
+    }
+}
+
+
+
+/* ---------- AJUSTES PARA MOBILE ---------- */
+/* ---------- AJUSTES PARA MOBILE ---------- */
+/* ---------- AJUSTES PARA MOBILE ---------- */
+
+@media only screen and (max-width:375px)
+{
+
+    /* ---------- HERO ---------- */
+    .heroMedia {
+        position: relative;
+    }
+    .heroContent {
+        top: 20%;
+        left: $spacing*2;
+        padding-right: $spacing*2;
+        .mainTitle {
+            font-size: 2rem;
+        } 
+        .generalText {
+            font-size: 1rem;
+        }
+    }
+
+
+
+    /* ---------- PODUCTO ---------- */
+#product {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: $spacing*4;
+        padding-bottom: $spacing*4;
+    
+    .imageRight {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 348px;
+        padding: 0px;
+        div {
+            order: 2;
+        }
+        img {
+            order: 1;
+        }
+    }
+
+    .imageLeft {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 348px;
+        padding: 0px;
+        img {
+            padding-bottom: $spacing*3;
+        }
+    }
+}
+    
+
+/* ---------- ACA COMIENZAN LAS CLASES DEL FOOTER ---------- */
+#footer {
+    justify-content: center;
+
+    .footerInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        .footerInfo img {
+            width: 100px;
+        }
+    }
+
+    .footerMenu {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-column-gap: 0px;
+        ul {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            padding-inline-start: 0px;
+            li {
+                padding: 0 0 8px 0;
+            }
+    }
+    }
+}
+
+
+    /* ---------- BANNER FINAL ---------- */
+    .bannerEndContent {
+        padding: 0px 16px 16px 16px;
+    }
+
+
+     /* ---------- BANNER ---------- */
+    .bannerContent {
+        top: 40%;
+        left: $spacing*2;
+    }
+    .bannerMedia .mediaMobile {
+        display:inherit;
+    }
+    .bannerMedia .media {
+        display:none;
+    }
+    
+
+    /* ---------- ACA COMIENZAN LAS CLASES DE GRUPOS ---------- */
+    #groups {
+        background-color: $plainwhite;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: $spacing*3;
+    }
+
+    .groupHorarios {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-column-gap: $spacing*3;
+        grid-row-gap: $spacing*3;
+    }
+
+
+    /* ---------- ACA COMIENZAN LOS ID DE MASTERCLASS ---------- */
+
+    #masterclass iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    /* ---------- ACA COMIENZAN LAS CLASES DE LA SECCION CONTACT ---------- */
+    #contact {
+        padding: $spacing*2;
+
+        .gmap_canvas {
+            padding-top: $spacing*3;
+            width: 348px;
+        }
+        .mapouter {
+            width: 348px;
+        }
+        #contact iframe {
+            width: 348px;
+        }
+}
+
+
+}
