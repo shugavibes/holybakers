@@ -308,6 +308,22 @@ html {
 #contact {
   padding: 24px; }
 
+/* ---------- PAGINA DE ERROR 404 ---------- */
+#errorPage404 {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center; }
+  #errorPage404 .errorPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px; }
+    #errorPage404 .errorPageContent .img404 {
+      width: 100%;
+      height: 400px;
+      padding-top: 24px;
+      padding-bottom: 40px; }
+
 /* ---------- AJUSTES PARA TALBET ---------- */
 /* ---------- AJUSTES PARA TALBET ---------- */
 /* ---------- AJUSTES PARA TALBET ---------- */
