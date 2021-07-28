@@ -328,6 +328,17 @@ html {
 /* ---------- AJUSTES PARA TALBET ---------- */
 /* ---------- AJUSTES PARA TALBET ---------- */
 @media only screen and (max-width: 768px) {
+  /* ---------- HEADER ---------- */
+  #header .navbar-expand-lg .navbar-collapse {
+    padding-top: 24px; }
+    #header .navbar-expand-lg .navbar-collapse .nav-item {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid #F4A261; }
+    #header .navbar-expand-lg .navbar-collapse .navbar-nav {
+      width: 100%; }
   /* ---------- HERO ---------- */
   .heroContent {
     top: 30%; }
@@ -354,6 +365,17 @@ html {
 /* ---------- AJUSTES PARA MOBILE ---------- */
 /* ---------- AJUSTES PARA MOBILE ---------- */
 @media only screen and (max-width: 375px) {
+  /* ---------- HEADER ---------- */
+  #header .navbar-expand-lg .navbar-collapse {
+    padding-top: 24px; }
+    #header .navbar-expand-lg .navbar-collapse .nav-item {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid #F4A261; }
+    #header .navbar-expand-lg .navbar-collapse .navbar-nav {
+      width: 100%; }
   /* ---------- HERO ---------- */
   .heroMedia {
     position: relative; }
