@@ -324,9 +324,9 @@ html {
       padding-top: 24px;
       padding-bottom: 40px; }
 
-/* ---------- AJUSTES PARA TALBET ---------- */
-/* ---------- AJUSTES PARA TALBET ---------- */
-/* ---------- AJUSTES PARA TALBET ---------- */
+/* ---------- AJUSTES PARA TABLET ---------- */
+/* ---------- AJUSTES PARA TABLET ---------- */
+/* ---------- AJUSTES PARA TABLET ---------- */
 @media only screen and (max-width: 768px) {
   /* ---------- HEADER ---------- */
   #header .navbar-expand-lg .navbar-collapse {
@@ -341,17 +341,31 @@ html {
       width: 100%; }
   /* ---------- HERO ---------- */
   .heroContent {
-    top: 30%; }
+    top: 20%; }
     .heroContent .mainTitle {
       font-size: 3.125rem; }
-  /* ---------- PDORUCT ---------- */
+  /* ---------- PODUCTO ---------- */
   #product {
-    padding-right: 16px;
-    padding-left: 16px; }
-    #product .imageLeft img {
-      max-width: 348px; }
-    #product .imageRight img {
-      max-width: 348px; }
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+    #product .imageRight {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 0px; }
+      #product .imageRight div {
+        order: 2; }
+      #product .imageRight img {
+        order: 1; }
+    #product .imageLeft {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 0px; }
+      #product .imageLeft img {
+        padding-bottom: 24px; }
   /* ---------- BANNER ---------- */
   .bannerMedia {
     position: relative; }
@@ -515,7 +529,6 @@ html {
       #footer .footerInfo .footerInfo img {
         width: 100px; }
     #footer .footerMenu {
-      display: grid;
       grid-template-columns: 1fr;
       justify-items: center;
       grid-column-gap: 0px; }
@@ -563,3 +576,139 @@ html {
       width: 348px; }
     #contact #contact iframe {
       width: 348px; } }
+
+/* ---------- AJUSTES ESPECIFICOS ENTRE 420 Y 520 ---------- */
+/* ---------- AJUSTES ESPECIFICOS ENTRE 420 Y 520 ---------- */
+/* ---------- AJUSTES ESPECIFICOS ENTRE 420 Y 520 ---------- */
+@media only screen and (max-width: 550px) {
+  /* ---------- HERO ---------- */
+  .heroMedia {
+    position: relative; }
+  .heroContent {
+    top: 20%;
+    left: 16px;
+    padding-right: 16px; }
+    .heroContent .mainTitle {
+      font-size: 2rem; }
+    .heroContent .generalText {
+      font-size: 1rem; }
+  /* ---------- PODUCTO ---------- */
+  #product {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+    #product .imageRight {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      padding: 0px; }
+      #product .imageRight div {
+        order: 2; }
+      #product .imageRight img {
+        order: 1; }
+    #product .imageLeft {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      padding: 0px; }
+      #product .imageLeft img {
+        padding-bottom: 24px; }
+  /* ---------- ACA COMIENZAN LAS CLASES DEL FOOTER ---------- */
+  #footer {
+    justify-content: center; }
+    #footer .footerInfo {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; }
+      #footer .footerInfo .footerInfo img {
+        width: 100px; }
+    #footer .footerMenu {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-column-gap: 0px; }
+      #footer .footerMenu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0px; }
+        #footer .footerMenu ul li {
+          padding: 0 0 8px 0; }
+  /* ---------- BANNER FINAL ---------- */
+  .bannerEndContent {
+    padding: 0px 16px 16px 16px; }
+  /* ---------- BANNER ---------- */
+  .bannerContent {
+    top: 40%;
+    left: 16px; }
+  .bannerMedia .mediaMobile {
+    display: inherit; }
+  .bannerMedia .media {
+    display: none; }
+  /* ---------- ACA COMIENZAN LAS CLASES DE GRUPOS ---------- */
+  #groups {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 24px; }
+  .groupHorarios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px; }
+  /* ---------- ACA COMIENZAN LOS ID DE MASTERCLASS ---------- */
+  #masterclass iframe {
+    width: 100%;
+    height: 250px; }
+  /* ---------- ACA COMIENZAN LAS CLASES DE LA SECCION CONTACT ---------- */
+  #contact {
+    padding: 16px; }
+    #contact .gmap_canvas {
+      padding-top: 24px;
+      width: 348px; }
+    #contact .mapouter {
+      width: 348px; }
+    #contact #contact iframe {
+      width: 348px; } }
+
+/* ---------- AJUSTES ESPECIFICOS PARA CARDS ---------- */
+/* ---------- AJUSTES ESPECIFICOS PARA CARDS ---------- */
+/* ---------- AJUSTES ESPECIFICOS PARA CARDS ---------- */
+@media only screen and (max-width: 740px) {
+  /* ---------- ACA COMIENZAN LAS CLASES DE GRUPOS ---------- */
+  #groups {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 24px; }
+  .groupHorarios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px; } }
+
+/* ---------- AJUSTES PARA 320 ---------- */
+/* ---------- AJUSTES PARA 320 ---------- */
+/* ---------- AJUSTES PARA 320 ---------- */
+@media only screen and (max-width: 350px) {
+  /* ---------- HERO ---------- */
+  .heroContent {
+    top: 10%; } }
+
+/* ---------- AJUSTES PARA NAVBAR ---------- */
+/* ---------- AJUSTES PARA NAVBAR ---------- */
+/* ---------- AJUSTES PARA NAVBAR ---------- */
+@media only screen and (max-width: 991px) {
+  /* ---------- HEADER ---------- */
+  #header .navbar-expand-lg .navbar-collapse {
+    padding-top: 24px; }
+    #header .navbar-expand-lg .navbar-collapse .nav-item {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid #F4A261; }
+    #header .navbar-expand-lg .navbar-collapse .navbar-nav {
+      width: 100%; } }
